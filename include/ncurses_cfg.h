@@ -62,7 +62,6 @@
 #define HAVE_LINK 1
 #define HAVE_SYMLINK 1
 #define USE_SYMLINKS 1
-#define HAVE_LANGINFO_CODESET 1
 #define HAVE_FSEEKO 1
 #define HAVE_CURSES_VERSION 1
 #define HAVE_HAS_KEY 1
@@ -134,7 +133,11 @@
 #define HAVE_VSNPRINTF 1
 #define HAVE_ISASCII 1
 #define HAVE_NANOSLEEP 1
+
+#ifndef HAVE_TERMIO_H
 #define HAVE_TERMIO_H 1
+#endif
+
 #define HAVE_TERMIOS_H 1
 #define HAVE_UNISTD_H 1
 #define HAVE_TCGETATTR 1
