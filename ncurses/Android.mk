@@ -156,8 +156,8 @@ LOCAL_SRC_FILES := \
 	base/version.c
 	
 LOCAL_C_INCLUDES += \
-	external/libncurses/include \
-	external/libncurses/ncurses
+	$(LOCAL_PATH)/../include \
+	$(LOCAL_PATH)
 
 LOCAL_CFLAGS += \
 	-DHAVE_CONFIG_H \
