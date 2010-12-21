@@ -169,6 +169,8 @@ LOCAL_MODULE:= libncurses
 LOCAL_PRELINK_MODULE := false
 LOCAL_SHARED_LIBRARIES := libdl
 
+LOCAL_MODULE_TAGS := eng
+
 include $(BUILD_SHARED_LIBRARY)
 
 # ========================================================
